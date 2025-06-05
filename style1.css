@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header {
+    background-image: linear-gradient(#0c3f273e,#31665e89), url(IMG/cultivating-hope-hero-940x529.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header2 {
+    background-image: linear-gradient(#0c3f273e,#31665e89), url(IMG/P.violence.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header3 {
+    background-image: linear-gradient(#0c3f273e,#31665e89), url(IMG/institutional\ geweld.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header4 {
+    background-image: linear-gradient(#0c3f273e,#31665e89), url(IMG/header44.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header5 {
+    background-image: linear-gradient(#0c3f273e,#31665e89), url(IMG/Signs-of-Emotional-Abuse-2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+nav img {
+    width: 200px;}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;} 
+
+.navLinks {
+    flex:1;
+    text-align: right;
+}
+
+.navLinks ul li  {
+    display: inline-block;
+    position: relative;
+    
+}
+
+.navLinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13.5px;
+    padding: 4px 8px;
+}
+
+.navLinks ul li::after {
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #04e762;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navLinks ul li:hover::after
+{ width: 100%;}
+
+.navLinks ul {
+    list-style: none;
+}
+
+.navLinks ul li a {
+    display: block;
+padding: 4px 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.navLinks ul li ul.dropdown{
+    position: absolute;
+    z-index: 999;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #0cde64a0;
+    transition:   max-height 0.4s ease, opacity 0.6s ease;
+    box-shadow: 0 4px 16px 0 rgba(19, 120, 58, 0.827);
+    border-radius: 5px;
+}
+
+.navLinks ul li:hover ul.dropdown {
+    max-height: 800px;
+    
+    opacity: 1;
+    visibility: visible;
+}
+
+.navLinks ul li ul.dropdown li {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navLinks ul li ul.dropdown li a {
+    padding: 10px 0;
+    color: #fff;
+    font-size: 13px;
+}
+
+.navLinks ul li ul.dropdown li:hover {
+    background: #04e762;
+}
+
+.navLinks ul li ul.dropdown li:hover a {
+    color: #fff;
+}
+
+.navLinks ul li ul.dropdown li:hover::after {
+    background: #fff;
+}
+
+.navLinks ul li ul.dropdown li:hover::before {
+    background: #fff;
+}
+
+.navLinks ul li ul.dropdown li::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #04e762;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.spacer {
+    padding: 10px;
+}
+
+
+
+.textBox {
+ width: 90%;
+ color: #fff;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ text-align: center;
+}
+
+.textBox h1{
+    font-size: 62px;
+}
+
+.textBox p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.heroBtn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.heroBtn:hover{
+    border: 1px solid #04e762;
+    background: #04e762;
+    transition: 1s;
+}
+
+.blogIntro {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.blogIntro p {
+    margin-top: 10px;
+}
+
+.blog {
+    flex-basis: 31%;
+    background:#94c58c;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+.blog:hover {
+ box-shadow: 0 0 20px 0 #00000033
+}
+
+.blogPortal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blogPortal{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blogPortal img{
+width: 100%;
+height: 100%;}
+
+.imgWrapper { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imgWrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.layer {
+    background:  transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:  #4fc978b3;
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    opacity: 0;
+    transition: 0.5s
+}
+
+.layer:hover h3{
+    margin-top: 25%;
+    opacity: 1;
+}
+
+.geschrevenBlog {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #006B5F;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #00000033;
+}
+
